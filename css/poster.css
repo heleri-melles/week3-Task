@@ -10,7 +10,8 @@
 
 html {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #151515;
+    /*color: #151515;*/
+    color: rgb(26, 53, 75);
 }
 
 .movie-card {
@@ -27,6 +28,7 @@ html {
     margin-top: 2rem;
     height: 500px;
     border-radius:5%;
+    cursor: pointer;
 }
 
 .movie-rating {
@@ -46,7 +48,9 @@ html {
 }
 
 .movie-info-quote {
-    color: #151515a4;
+    /*color: rgb(18, 63, 100);*/
+    /*color: #151515a4;*/
+    color: rgb(188, 224, 245);
     font-style: italic;
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -80,7 +84,7 @@ html {
 
 .movie-info-actions ul li a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(247, 196, 138);
     padding: 1rem;
     cursor: pointer;
     display: flex;
@@ -88,10 +92,52 @@ html {
     justify-content: center;
 }
 
+.modal {
+    display: none ;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 15, 6, 0.685);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    
+}
+
+.modal-content {
+    background-color: rgb(211, 171, 152);
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+    border-radius: 5%;
+}
+
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+.movie-poster-modal {
+    width: 300px;
+    border-radius: 5%;
+}
+
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+    color: rgb(3, 37, 65);
+}
+
 footer {
     margin-top: 2rem;
     text-align: center;
-    color: #777;
+    color: rgb(18, 63, 100);
+    /*color: rgb(188, 224, 245);*/
 }
 
 footer ul {
@@ -109,5 +155,11 @@ footer ul li a {
     font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
-    color: #777;
+    /*color: rgb(119, 119, 119);*/
+    /*color: rgb(188, 224, 245);*/
+    color: rgb(18, 63, 100);
+}
+
+body {
+    background-color: #df8f60;
 }
