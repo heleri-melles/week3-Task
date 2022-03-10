@@ -133,15 +133,64 @@ html {
     color: rgb(3, 37, 65);
 }
 
+.carousel {
+    max-width: 500px;
+    margin: 2% auto;
+    position: relative;
+    
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hiden {
+    display: none;
+}
+
+.carousel .carousel__item--visible {
+    display: block;
+    animation:fadeIn 0.7s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0 ;}
+    100% {opacity: 1;}
+}
+
+.carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: rgba(105, 11, 11, 0.651)  ;
+    font-size: 2rem;
+    color: bisque;
+}
+
 footer {
     margin-top: 2rem;
     text-align: center;
     color: rgb(18, 63, 100);
     /*color: rgb(188, 224, 245);*/
+    transform: translateY(21rem);
 }
 
 footer ul {
     list-style: none;
+    
 }
 
 footer ul li {
